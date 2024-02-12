@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ ¿Quieres ser mi San Valentín? ♥</title>
+  <style>
+    .body {
+      background-color: crimson;
+      text-align: center;
+    }
+    .body__title {
+      color: white;
+    }
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="body">
+  <h1 class="body__title">♥ ¿Quieres ser mi San Valentín? ♥</h1>
+  <img src="https://www.shutterstock.com/image-vector/cute-monkey-couple-love-heart-600nw-2178178037.jpg" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">🌚Si SoY🌚</button>
+  <button id="no">😭Nel PerrO😭</button>
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('💞Muchas gracias por este gran honor💞');
+      alert('Ahora una canción para celebrar :3');
+      location.href = 'https://www.youtube.com/watch?v=8zdg-pDF10g';
+    };
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+</html>
